@@ -1,0 +1,7 @@
+* {
+    border: solid red 1px;
+}
+
+#mainContainer {
+    display: flex;
+}
