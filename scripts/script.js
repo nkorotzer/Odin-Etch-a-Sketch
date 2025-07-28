@@ -5,6 +5,11 @@ function styleRow(newRow) {
     newRow.style.flex = "1";
     newRow.textContent = "filler";
 
+    newRow.addEventListener("mouseenter", function (e) {
+        e.target.classList.toggle("dark");
+        console.log("yo");
+    })
+
     return newRow;
 }
 
@@ -24,6 +29,5 @@ function styleColumn(newCol) {
 for (let i = 0; i < gridDimension; i++) {
     const newCol = document.createElement("div");
     const styledCol = styleColumn(newCol);
-
     mainContainer.appendChild(styledCol);
 }
