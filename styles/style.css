@@ -7,11 +7,19 @@ html, body {
     margin: 0;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 #mainContainer {
     display: flex;
     background-color: white;
-    height: 100%;
-    width: 100%;
+    height: 50%;
+    width: 50%;
+    border: solid black 1px;
 }
 
 div {
