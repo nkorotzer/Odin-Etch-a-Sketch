@@ -4,9 +4,15 @@ let defaultGridDimension = 10;
 
 function styleRow(newRow) {
     newRow.style.flex = "1";
+    newRow.style.opacity = 1;
+    newRow.style.backgroundColor = "black";
 
     newRow.addEventListener("mouseenter", function (e) {
-        e.target.classList.toggle("dark");
+        // e.target.classList.toggle("dark");
+
+        if (e.target.style.opacity > 0)
+            e.target.style.opacity -= 0.1;
+        console.log(e.target.style.opacity)
     })
 
     return newRow;
