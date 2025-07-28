@@ -52,6 +52,7 @@ resetBtn.addEventListener("click", function () {
     }
 
     eraseGrid();
+    createGrid(userInput);
 })
 
 createGrid(defaultGridDimension);
