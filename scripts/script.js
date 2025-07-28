@@ -2,10 +2,17 @@ const mainContainer = document.querySelector("#mainContainer");
 const resetBtn = document.querySelector("#resetBtn");
 let defaultGridDimension = 10;
 
+function generateRandomRGB() {
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    return `rgb(${r}, ${g}, ${b})`;
+}
+
 function styleRow(newRow) {
     newRow.style.flex = "1";
     newRow.style.opacity = 0;
-    newRow.style.backgroundColor = "black";
+    newRow.style.backgroundColor = generateRandomRGB();
 
     newRow.addEventListener("mouseenter", function (e) {
         // e.target.classList.toggle("dark");
