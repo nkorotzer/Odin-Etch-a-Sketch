@@ -3,11 +3,9 @@ let gridDimension = 10;
 
 function styleRow(newRow) {
     newRow.style.flex = "1";
-    newRow.textContent = "filler";
 
     newRow.addEventListener("mouseenter", function (e) {
         e.target.classList.toggle("dark");
-        console.log("yo");
     })
 
     return newRow;
