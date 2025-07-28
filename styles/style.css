@@ -4,4 +4,13 @@
 
 #mainContainer {
     display: flex;
+    background-color: white;
+}
+
+div {
+    background-color: white;
+}
+
+.dark {
+    background-color: black;
 }
